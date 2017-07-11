@@ -1,23 +1,23 @@
 ﻿// JavaScript Document
-
+//jianlee edit
 $(function(){
 	var winWidth=$(window).width();
 	var imgHeight=winWidth/2.15
 	$('.navAnimate li a,.navAnimate').width(winWidth);
 	$('.navAnimate li a,.navAnimate,.navLR').height(imgHeight);
-	
+
 	//$('.navAnimate').height($('.navAnimate li a').height());
 	//  $('.navLR').height($('.navAnimate li a').height());
-      
-      $(window).resize(function () {     
+
+      $(window).resize(function () {
 	  var winWidth=$(window).width();
 	var imgHeight=winWidth/2.15
 	$('.navAnimate li a,.navAnimate').width(winWidth);
 	$('.navAnimate li a,.navAnimate,.navLR').height(imgHeight);
-	
+
     //        	$('.navAnimate').height($('.navAnimate li a').height());
-            	
-    //        	$('.navLR').height($('.navAnimate li a').height()); 
+
+    //        	$('.navLR').height($('.navAnimate li a').height());
       });
 	})
 $(function(){
@@ -31,7 +31,7 @@ $(function(){
 	   /*var or=true;
        var times=setInterval(function(){
 			if(or==true){
-				clickRight();  
+				clickRight();
          	 }
 			},3000,clickRight);*/
 		// 经过动画主区 左右按钮动画效果
@@ -47,7 +47,7 @@ $(function(){
 		 $('.navLR .leftBtn,.navLR .rightBtn').fadeOut(100);
 		 //当鼠标离开 动画主区 左右按钮淡出隐藏；
 		or=true;
-   });			
+   });
 	 //左击 上一张图片
 	 $('.navLR .leftBtn').click(clickLeft);
 	 function clickLeft(){
@@ -89,7 +89,7 @@ $(function(){
 			$('.navTB li').eq(0).addClass('hoverList').siblings().removeClass('hoverList');
 			i=0;  //将索引值变为0，回到初始状态
 			}
-		}	
+		}
 	/*$('.rightBtn').click(function(){
 		if($('.navAnimate li').length>i+1){ //如果不是最后一张，将执行下面的代码
 			$('.navAnimate li').eq(i).fadeOut(300).next().fadeIn(300);
@@ -104,34 +104,34 @@ $(function(){
 			i=0;  //将索引值变为0，回到初始状态
 			}
 		})*/
-	// 小型导航条 切换图片   
-	$('.navTB li').hover(function(){       
+	// 小型导航条 切换图片
+	$('.navTB li').hover(function(){
 		var $animateIndex=$(this).index();
 		$('.navAnimate li').eq($animateIndex).fadeIn().siblings().fadeOut();
 		$(this).addClass('hoverList').siblings('li').removeClass('hoverList');
-		});	
+		});
 	//首页导航栏 动画
 	// $('.YHhead-content ul li').click(function(){
 	// 	var liClicknum=$(this).index();
 	// 	});
-    //主导航栏面包屑 点击效果 
+    //主导航栏面包屑 点击效果
 	$('.YHhead-content ul li').click(function(){
 	  $('.YHhead-content ul li a').removeClass('clickNav');
 		$(this).find('a').addClass('clickNav');
 		//var $nowLi=$(this).index();
 		});
-	//主导航栏面包屑 经过效果 
+	//主导航栏面包屑 经过效果
 	$('.YHhead-content ul li').hover(function(){
 		$(this).find('a').addClass('hoverA');
 		var $navmini=$(this).index();
 		$('.YHhead-content ul p').stop(true).animate({left:$(this).width()*$navmini},200)	;
 		//$('.YHhead-content ul p').stop(true).animate({left:$(this).width()*$navmini+$('.YHhead-content ul li').width()/2},200)	;
-		//$(this).find('a').css('color','#f90')	
+		//$(this).find('a').css('color','#f90')
 		},function(){
 		//	alert($nowLi)
 				$(this).find('a').removeClass('hoverA');
 			$('.YHhead-content ul p').stop(true).animate({left:'0'},200);
-			//$(this).find('a').css('color','#fff')	
+			//$(this).find('a').css('color','#fff')
 	});
 	//以上 的小滑条是固定的长度 ；下面这段代码是 随着文字的长度而变的
 	  /*$('.YHhead-content ul li').hover(function(){
@@ -139,7 +139,7 @@ $(function(){
 		var $aWidth=$(this).find('a').width();
 		$(this).siblings('p').width($aWidth)
 		$('.YHhead-content ul p').stop(true).animate({left:$(this).width()*$navmini+$('.YHhead-content ul li').width()/2-$(this).siblings('p').width()/2},300)
-		
+
 		},function(){
 			$('.YHhead-content ul p').stop(true).animate({left:'42px'},300);
 			$('.YHhead-content ul p').width('36px');
@@ -147,13 +147,13 @@ $(function(){
 	 //第3张图片显示时 主导航栏的字体颜色变成 黑色（待改正 目前没效果）
 	    /*if($('.navAnimate ul li').eq(2).css('display','list-item')){
 
-	    $('.YHhead-content ul li a').css('color','#000')	
+	    $('.YHhead-content ul li a').css('color','#000')
 	    }
 	    if($('.navAnimate ul li').eq(2).css('display','none')){
        $('.YHhead-content ul li a').css('color','#fff')
 
-	    }*/	
-	   });	
+	    }*/
+	   });
 	/*手机端才出现的 小型导航栏*/
 	$(function(){
 		$('.navMiniClick').toggle(function(){
@@ -164,9 +164,9 @@ $(function(){
 		       $('.navMiniClick').removeClass('navMiniClicks')
 			});
 	})
-		/*雄鹰效果*/    
-$(function(){		  
-	 var $imgYing=$('.imgYing li').length*520+'px'; 	
+		/*雄鹰效果*/
+$(function(){
+	 var $imgYing=$('.imgYing li').length*520+'px';
 		//雄鹰小图 经过时 让左右切换图标 隐藏显示；
 	$('.navYing').hover(function(){
 		$(this).find('.leftBtn').animate({left:'10px'},300);
@@ -188,7 +188,7 @@ $(function(){
 			i=$('.imgYing li').length-1;
 			$('.navYing .tbYing li').eq($('.imgYing li').length-1).addClass('hoverList').siblings().removeClass('hoverList');
 			}
-		});	
+		});
 	 $('.navYing .rightBtn').click(function(){
 		if($('.navYing .tbYing li').length>i+1){  //这边当时少了 li 出错没反应 要写仔细了
 			$('.imgYing').animate({left:-($('.imgYing li').width())*(i+1)},300);
@@ -221,8 +221,8 @@ $(function(){
 			i=0;
 			$('.navYing .tbYing li').eq(0).addClass('hoverList').siblings().removeClass('hoverList');
 			}
-		 }	
-		},3000);	
+		 }
+		},3000);
 	$('#YHhelp .YHhelp_hide span').click(function(){
 		$(this).parent().hide();
 		$('#YHhelp .YHtop').hide();
@@ -240,26 +240,26 @@ $(function(){
 			$('.YHhelp_show a .qq_big img').stop(true).animate({'width':'70px','height':'80px'},300);
 			});
 	$('.YHhelp_show .tel li:odd').addClass('odd');
-	
+
 	// 浏览器置顶 QQ客服微信按钮
-	
+
 	$('.YHhelp_show .YHt dd:first-child').hover(function(){
-		$('.YHhelp_show i').fadeIn(300);		
+		$('.YHhelp_show i').fadeIn(300);
 		},function(){
 			$('.YHhelp_show i').stop(true).fadeOut(300);
 			});
 	//当第 3和第4个动画li显示的时候 让它 把导航栏的 字体颜色变成黑色
    /*$(function(){
-	    
+
 		if($('.navAnimate li').eq(2).is(':visible')){
-			
+
 			$('.YHhead-content ul li a').css('color','blue')
 			}
 	     else{
-			$('.YHhead-content ul li a').css('color','#fff') 
+			$('.YHhead-content ul li a').css('color','#fff')
 			 }
 	   })*/
-	  
+
 	// 滚轮事件 返回顶部 在 window 滑下0px时(即随便往下滚动)再显示  90px以内隐藏
 	$(window).scroll(function(){
 		var s=$(window).scrollTop();
@@ -277,9 +277,9 @@ $(function(){
 			}
 		else{
 			$('.YHhead').css('position','absolute').css('background','transparent')
-			}*/ 
+			}*/
 		});
-		 
+
 	$('.upImages li').hover(function(){
 		$(this).find('div').animate({'bottom':'6px'},300);
 		$(this).find('div span').css('display','block');
@@ -291,7 +291,7 @@ $(function(){
 			$(this).find('.sacle').stop(true).css('display','none').animate({'left':'36px'});
 			$(this).find('.share').stop(true).css('display','none').animate({'right':'36px'});
 			});
-	
+
 	$('.upImages ul li .sacle').click(function(){
 		var upImagesLIindex=$(this).parents('li').index();
 		$('.openImages').css('display','block');
@@ -306,9 +306,9 @@ $(function(){
 		},function(){
 			$('.openImagesPrev,.openImagesNext').fadeOut(300);
 			});
-    //放大图片 左右按钮点击样式 
+    //放大图片 左右按钮点击样式
 	// 注意 这里的逻辑暂时是不对的； 不管点哪个 图放大 再点左按钮都是 换到最后一张 而点右 都是换到第2张； 因为 下面赋值的iq=0  ；而不是 当前点击的索引值； 以前让iq=0 是因为 一般都是开始就只显示第一张；所以iq才会等于0；
-	  var upImagesLIindex=$('.upImages ul li').length; 
+	  var upImagesLIindex=$('.upImages ul li').length;
 	  var iq=0; //这里的iq 因为不是为0；而是为 点击图片放大的那个 index() 索引值；
 	 $('.openImagesPrev').click(function(){
 		 if(iq>0){
@@ -344,7 +344,7 @@ $(function(){
 			$('.YHfoot').stop(true).animate({'bottom':'-267px'},600);
 			}
 		});
-		
+
 	 //前端文章推荐css部分
 	$('.textcontentL ul li:last').css('border','none');
 	$('.textcontentR ul li:last').css('border','none');
@@ -387,7 +387,7 @@ $(function(){
 	   	   $('.miniNav').toggle();
 	   	 });
 	   $('.miniNav ul li a').click(function(){
-         $(this).addClass('miniAclick').parent('li').siblings().find('a').removeClass('miniAclick'); 
+         $(this).addClass('miniAclick').parent('li').siblings().find('a').removeClass('miniAclick');
 	   	  return false;
 	   	 });
 	   //$('.navAnimate li a').height($(window).height())
@@ -396,6 +396,5 @@ $(function(){
 
 
   /*jquery 函数关闭符不能删除*/
-	
-	});
 
+	});

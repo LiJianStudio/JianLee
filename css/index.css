@@ -1,11 +1,12 @@
 @charset "utf-8";
+/*jianlee css*/
 /* CSS Document */
 body{ font-family:"微软雅黑","Libre Baskerville";width:auto;font-size: 100%;}/*background:url(../images/index/bg.jpg) repeat-y;*/
 *{padding:0;margin:0px;box-sizing:border-box;-moz-box-sizing:border-box;}
 li{list-style-type:none;}
 a{text-decoration:none;}
 .box{width: 100%;padding:0 10%;}
-.boxs{float:left;width:100%;margin: 0 auto;padding:10px;border:1px solid #ccc;} 
+.boxs{float:left;width:100%;margin: 0 auto;padding:10px;border:1px solid #ccc;}
 .twoCode{width:60px;height:60px;padding:5px;position:absolute;right:70px;top:10px;z-index:101;}
 .twoCode span{width:14px;height:14px;position:absolute;z-index:101;top:5px;right:-9px;background:url(../images/index/biaoq.png) no-repeat 0px -544px;cursor:pointer}
 .twoCode img{float:left;width:60px;height:60px;}
@@ -87,7 +88,7 @@ a{text-decoration:none;}
 
 /*老鹰*/
 .ying{float:left;}
-.navYing{float:left;width:520px;height:280px;position:relative;overflow:hidden;border:2px solid #000;margin-right:10px;} 
+.navYing{float:left;width:520px;height:280px;position:relative;overflow:hidden;border:2px solid #000;margin-right:10px;}
 .navYing .imgYing{position:absolute;top:0;left:0;}
 .navYing .imgYing li{float:left;width:520px;height:280px;}
 .navYing div{width:50px;height:280px;position:absolute;cursor:pointer;}
@@ -96,7 +97,7 @@ a{text-decoration:none;}
 .tbYing{left:50%;bottom:20px;margin-left:-48px;position:absolute;}
 .tbYing li{float:left;width:20px;height:4px;background:#ccc;margin-right:4px;display:inline;}
 .tbYing li.hoverList{background:#fad36f;}
- 
+
 /*浏览器置顶 QQ客服微信按钮*/
 #YHhelp{position:fixed;right:0px;top:45%;z-index:100;cursor:pointer}
 #YHhelp .YHhelp_hide{background:url(../images/index/help.png) no-repeat;width:40px;height:133px;position:relative;}
@@ -104,7 +105,7 @@ a{text-decoration:none;}
 #YHhelp .YHhelp_hide .YHtop{float:left;position:absolute;bottom:-42px;left:0;width:41px;height:39px;background:url(../images/index/20140711104246.png) no-repeat center center;margin:4px 0 0 -1px;display:inline;display:none;}
 #YHhelp .YHhelp_show{width:110px;float:left;border:1px solid #ddd;border-radius:10px;background-color:#F9FAFB;position:relative;display:none;}
 #YHhelp .YHhelp_show span{width:24px;height:24px;position:absolute;top:-10px;right:10px;background:url(../images/index/close.png) no-repeat;z-index:99;}
-  
+
 .YHhelp_show a{float:left;position:relative;width:110px;height:90px;}
 .YHhelp_show a .yuanK{background:url(../images/index/yuanK.png) no-repeat;position:absolute;z-index:12;top:10px;left:20px;width:78px;height:82px;}
 .YHhelp_show a .qq_big{position:absolute;z-index:11;top:10px;left:22px;width:70px;height:80px;border-radius:35px;overflow:hidden;}/*待验证 ie8居然可以 radius*/
@@ -192,7 +193,7 @@ background:url(../images/index/UP-images/bg_foot.png) center center no-repeat !i
 
 /*大屁股pc端 769px-1024px*/
 @media (min-width:769px) and (max-width: 1024px){
-	
+
 	.box{padding:0 4%;}
 	.YHhead-content{padding:0 4%;}
 	.navLRTB{padding:0 4%;}
@@ -206,11 +207,11 @@ background:url(../images/index/UP-images/bg_foot.png) center center no-repeat !i
 }
 /*平板电脑端 min-width：481px；max-width:768px*/
 @media (min-width:481px) and (max-width: 768px){
-	
+
     .box{padding:0 10%;}
     .YHhead{height:40px;}
 	.YHhead-content{padding:0 10%;}
-	.navLRTB{padding:0 10%;}	
+	.navLRTB{padding:0 10%;}
 	.YHhead-content .ulNav{line-height:40px;height:40px;width:68%;}
 	.YHhead-content .ulNav li a{font-size:13px;}
 	/*文章推荐*/
@@ -243,7 +244,7 @@ z-index: 4;}
   /*  .navMini{display:block;}*/
 	.box{padding:0 4%;}
 	.YHhead-content{padding:0 4%;}
-	.navLRTB{padding:0 4%;}	
+	.navLRTB{padding:0 4%;}
 	.textcontentR{float:none;}
 	.textcontentL{width:100%;}
 	.textcontent h1{width:100%;}
@@ -265,11 +266,7 @@ z-index: 4;}
      .shareWb{border-left:none}
      /*miniNav导航*/
 	  .miniNav{width:100px;position:fixed;bottom:60px;left:65px;background: #444;display:none}
-     .miniNavClick{display:none;width:60px;position:fixed;bottom:5px;left:5px;cursor:pointer;} 
-    
+     .miniNavClick{display:none;width:60px;position:fixed;bottom:5px;left:5px;cursor:pointer;}
+
      .navMiniShow{top:55px;}
 }
-
-
-
-
